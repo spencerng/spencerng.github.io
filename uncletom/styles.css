@@ -124,9 +124,17 @@ html, body {
   z-index: 999;
 }
 
+.mdl .mdl-layout__content {
+    display: -webkit-flex;
+  display: flex;
+    -webkit-flex-direction: column;
+          flex-direction: column;
+}
+
 .mdl .mdl-layout__content section:not(:last-of-type) {
   position: relative;
   margin-bottom: 48px;
+  flex-shrink: 0;
 }
 .mdl section.section--center {
   max-width: 860px;
@@ -209,6 +217,8 @@ html, body {
   border-radius: 25px;
   margin: 8px 16px;
 }
+
+
 .mdl-mega-footer a {
      text-decoration: none;
   }
@@ -229,25 +239,169 @@ html, body {
   z-index: 99;
 }
 
-#bib{
+
+
+.mdl .mdl-grid .content-footer{
+  
+        margin-top: 10px;
+    padding-top: 10px;
+    
+    background-color: white;
+    
+    padding:0  50px;
+    position: relative;
+    min-height: 30px;
+  
+}
+
+.mdl .mdl-grid .content-footer .prev-page-link{
+      font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    width: calc(50% - 2px);
+    position: relative;
+    padding: 46px 0 36px 0;
+}
+
+
+
+.mdl .mdl-grid .content-footer .next-page-link{
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  width: calc(50% - 2px);
+  position: relative;
+  padding: 46px 0 36px 0;
+  
+}
+
+.mdl .mdl-grid .content-footer .forward-arrow{
+    content: '';
+    right: -30px;
+    position: absolute;
+    bottom: 41px;
+    background-position: 0px -105px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.mdl .mdl-grid .content-footer .back-arrow{
+    content: '';
+    left: -30px;
+    position: absolute;
+    bottom: 41px;
+    background-position: 0px -105px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.mdl .mdl-grid .content-footer .start-end .forward-arrow{
+    content: '';
+    right: -12px;
+    position: relative;
+    bottom: 3px;
+    background-position: 0px -105px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.mdl .mdl-grid .content-footer .start-end .back-arrow{
+    content: '';
+    right: -12px;
+    position: relative;
+    bottom: 3px;
+    background-position: 0px -105px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.mdl .mdl-grid .content-footer .prev-page-link .link-caption{
+      position: absolute;
+    top: 26px;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.54;
+    left: 0;
+}
+
+.mdl .mdl-grid .content-footer .next-page-link .link-caption{
+      position: absolute;
+    top: 26px;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.54;
+    right: 0;
+}
+
+
+.mdl .mdl-grid a{
+  
+    text-decoration: none;
+    position: relative;
+
+  
+}
+
+.mdl .mdl-grid .heavy-content{
   padding: 1.75em;
   display: block;
+  margin: 1em;
   background-color: white;
   
 }
-#bib p{
+
+.mdl .mdl-cell p{
+  
+  font-size: 1.1em;
+}
+
+
+
+#bib{
+  
   padding-left: 1.75em ;
   text-indent:  -1em;
-  font-size: 1.1em;
-  letter-spacing: 0.5px;
 }
-
-#wrapper {
-    min-height: 100%;
-    height: auto !important; 
-    height: 100%;
-    margin: 0 auto -300px;
+#bib p{
+  margin-right: 1.5em;
 }
 
 
 
+.content-footer p{
+  font-color: white;
+}
+
+ .mdl .mdl-grid .content-footer .start-end{
+  text-align: center;
+  width: 100%;
+  padding: 36 px 0;
+  
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-decoration: none;
+  
+}
+
+.mdl-card-square.mdl-card {
+
+  height: 320px;
+}
+.mdl-card-square > .mdl-card__title {
+  color: #fff;
+  background: bottom right 15% no-repeat #46B6AC;
+}
