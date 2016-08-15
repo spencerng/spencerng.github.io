@@ -31,6 +31,10 @@ html, body {
 .mdl-layout__tab-bar-button {
   display: none;
 }
+
+.mdl-layout__tab:hover{
+  color: white;
+}
 .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
   display: none;
 }
@@ -288,6 +292,36 @@ html, body {
     vertical-align: middle;
 
 }
+
+.game-pane{
+  height: 100%;
+  text-align:center;
+}
+
+.game-pane .mdl-card__supporting-text{
+  text-align: left;
+}
+
+.game-pane .center-button{
+  
+  vertical-align: middle;
+
+  
+  
+}
+
+.mdl-radio-group{
+  text-align: left;
+  display: block;
+  padding-bottom: 2em;
+  padding-left: 1em;
+
+}
+.mdl-radio-group .mdl-radio__button{
+  margin-top: 3em;
+
+}
+
 .mdl .mdl-grid .content-footer .back-arrow{
     content: '';
     left: -30px;
@@ -353,17 +387,16 @@ html, body {
   
 }
 
-.mdl .mdl-grid .heavy-content{
-  padding: 1.75em;
-  display: block;
-  margin: 1em;
-  background-color: white;
-  
-}
+
 
 .mdl .mdl-cell p{
   
   font-size: 1.1em;
+}
+
+.mdl .mdl-grid .quiz{
+  width: 100%;
+  height: 500px;
 }
 
 
@@ -371,13 +404,23 @@ html, body {
 #bib{
   
   padding-left: 1.75em ;
-  text-indent:  -1em;
+  text-indent:  -1.5em;
 }
 #bib p{
   margin-right: 1.5em;
 }
 
+p a:hover, .content-footer a:hover:not(.link-caption){
+  color: #F48FB1;
+}
 
+.mdl-mega-footer a:hover {
+  color: #E0E0E0;
+}
+
+.mdl-mega-footer a h1:hover{
+  color: #FAFAFA;
+}
 
 .content-footer p{
   font-color: white;
@@ -405,3 +448,4 @@ html, body {
   color: #fff;
   background: bottom right 15% no-repeat #46B6AC;
 }
+

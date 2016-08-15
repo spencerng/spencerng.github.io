@@ -3,8 +3,9 @@
     <head>
     <meta charset="utf-8">
     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Uncle Tom's Cabin | Quiz</title>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../assets/apple-icon-72x72.png">
@@ -50,14 +51,43 @@
 <div class="mdl-layout__tab-panel is-active" id="sources">
           <section class="section--center mdl-grid ">
             
-            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone  mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone  mdl-shadow--2dp quiz">
+              
+              <div class="game-pane">
+              <div class="mdl-card__supporting-text" >
+                
+                <h4 id="questionTitle">Test your knowledge</h4>
+                <p>How much do you know about Harriet Beecher Stowe and <em>Uncle Tom's Cabin</em>?</p>
 
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--10-col">
-                <h4>Summary</h4>
-                Before discovering the impact of
-                </div>
+                <div class="mdl-radio-group">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rb1">
+                  <input class="mdl-radio__button" id="rb1" name="rb" type="radio" value="auto">
+                  <span class="mdl-radio__label">Always on</span>
+
+                </label>
+                <p></p>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rb2">
+                  <input class="mdl-radio__button" id="rb2" name="rb" type="radio" value="auto">
+                  <span class="mdl-radio__label">Always off</span>
+                </label>
+                <p></p>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rb3">
+                  <input class="mdl-radio__button" id="rb3" name="rb" type="radio" value="auto">
+                  <span class="mdl-radio__label">Automatic</span>
+                </label>
+                <p></p>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rb4">
+                  <input class="mdl-radio__button" id="rb4" name="rb" type="radio" value="auto">
+                  <span class="mdl-radio__label">Automatic</span>
+                </label>
               </div>
+                  
+              </div>
+              
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored center-button"  id="startButton">Start</button>
+              </div>
+
+              
             </div>
           
             <div class="mdl-layout-spacer"/>
@@ -132,6 +162,7 @@
       </main>
     </div>   
     <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <script src="quizscript.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
