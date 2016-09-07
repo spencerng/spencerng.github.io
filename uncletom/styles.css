@@ -22,6 +22,16 @@
 
 }
 
+.collapsible-header .icon{
+  width: 2rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  display: block;
+  float: left;
+  text-align: center;
+  margin-right: 1rem;
+}
+
 ul {
  list-style: none;
 }
@@ -47,26 +57,23 @@ ul {
   border-bottom: 1px solid #ddd;
 }
 
-.collapsible-header i {
-  width: 2rem;
-  font-size: 1.6rem;
-  line-height: 3rem;
-  display: block;
-  float: left;
-  text-align: center;
-  margin-right: 1rem;
-}
+
 
 .collapsible-body {
   display: none;
   border-bottom: 1px solid #ddd;
   box-sizing: border-box;
+  padding-top: 7px;
   background-color: rgb(250,250,250);
 }
 
 .collapsible-body p {
   margin: 0;
-  padding: 2rem;
+  
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+  padding-bottom: 10px;
 }
 
 .mdl-card--horizontal {
