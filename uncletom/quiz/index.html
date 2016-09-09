@@ -53,38 +53,59 @@
             
             <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone  mdl-shadow--2dp quiz">
               
-              <div class="game-pane">
-              <div class="mdl-card__supporting-text" >
-                
-                <h4 id="questionTitle">Test your knowledge</h4>
-                <p>How much do you know about Harriet Beecher Stowe and <em>Uncle Tom's Cabin</em>?</p>
+              <core-toolbar style="background-color: #3F51B5; color #fff; height:200px;font-size:16px;line-height:26px">
 
-                <div class="mdl-radio-group">
-                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rb1">
+                <h3 id = "question" style="color: white; padding-left: 30px; margin-top: 50px">Test your knowledge</h3>
+
+                <p id="progress" style="color: white; padding-left: 30px; font-size: 120%; padding-bottom: 50px;">How much do you know about Harriet Beecher Stowe and <em>Uncle Tom's Cabin</em>?</p>
+             </core-toolbar>
+
+              <div class="game-pane" id="gamePane">
+              
+
+                <div  id="buttons" class="mdl-radio-group" style="display: none; "">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rb1" style="height: 200%"">
                   <input class="mdl-radio__button" id="rb1" name="rb" type="radio" value="auto">
-                  <span class="mdl-radio__label">Always on</span>
+                  <span id="op1" class="mdl-radio__label">Always on</span>
 
                 </label>
                 <p></p>
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rb2">
                   <input class="mdl-radio__button" id="rb2" name="rb" type="radio" value="auto">
-                  <span class="mdl-radio__label">Always off</span>
+                  <span id="op2" class="mdl-radio__label">Always off</span>
                 </label>
                 <p></p>
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rb3">
                   <input class="mdl-radio__button" id="rb3" name="rb" type="radio" value="auto">
-                  <span class="mdl-radio__label">Automatic</span>
+                  <span id="op3" class="mdl-radio__label">Automatic</span>
                 </label>
                 <p></p>
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="rb4">
                   <input class="mdl-radio__button" id="rb4" name="rb" type="radio" value="auto">
-                  <span class="mdl-radio__label">Automatic</span>
+                  <span id="op4" class="mdl-radio__label">Automatic</span>
                 </label>
               </div>
-                  
-              </div>
+
+
+
+              <i class="material-icons" id="correctIcon" style="color:#4CAF50; display: none;display: none; font-size: 400%; margin-top: 20px">check</i>
+              <i class="material-icons" id="incorrectIcon" style="color:#f44336; display: none; font-size: 400%; margin-top: 20px">close</i>
+
+             
+
+              <p id="answerText" style="padding: 30px; font-size: 20px">f</p>
+
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id="nextButton" style="bottom-margin: 20px; display: none">Next</button>
+
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id="submitButton" style="margin: 20px; display: none">Submit</button>
+
+
               
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored center-button"  id="startButton">Start</button>
+
+              
+              
+              
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored center-button"  id="startButton" style="margin: 30px">Start</button>
               </div>
 
               
