@@ -8,7 +8,7 @@ function callGitHubAPI(){
 	 	setTimeout(function(){window.close()}, 200);
 
 	}
-	request.open('get', 'https://api.github.com/repos/spencerng/scouting-app/releases/latest', true)
+	request.open('get', 'https://api.github.com/repos/RaiderRobotix/scouting-app/releases/latest', true)
 	request.send()
 }
 
